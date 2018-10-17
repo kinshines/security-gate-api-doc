@@ -1,5 +1,19 @@
-hdlakhds
+响应体格式
 -------------------
+::
 
-dsadsa
-发生地方
+    {
+        "ResponseId":"long",//响应流水号,用于闸机动作后反馈状态时提供
+        "GateAction":"int",//闸机动作,附说明
+        "StatusCode":"int",//状态码,附说明
+        "Description":"string",//状态描述
+        "Type":"string",//证件类型
+        "Id":"string",//证件号
+        "Name":"string",//姓名
+        "FlightDate":"string",//航班日期
+        "FlightNo":"string",//航班号
+        "Departure":"string",//始发站
+        "Seat":"string",//座位号
+        "BoardNo":"string",//登机号
+        "FlightStatus":"string"//航班状态,ONR:前站起飞;ARR:本站到达;CKI:值机开始;CKO:值机截止;BOR:登机开始;TBR:过站登机;LBD:催促登机;POK:登机截止;DEP:起飞;DLY:延误;CAN:取消;RTN:返航;ALT:备降
+    }
