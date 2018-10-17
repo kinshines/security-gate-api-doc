@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>预安检开门结果反馈 &mdash; security-gate-api 0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> security-gate-api
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">恒大城发吃饭的</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pre_security.html">预安检闸机开门请求</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">security-gate-api</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>预安检开门结果反馈</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pre_security_feedback.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>预安检开门结果反馈<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>场景描述<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>在预安检闸机开门请求根据安检信息系统返回值做出动作后，须将闸机状态及拍摄的人脸照片反馈至安检信息系统</p>
+</div>
+<div class="section" id="url">
+<h2>请求URL<a class="headerlink" href="#url" title="永久链接至标题">¶</a></h2>
+<p><strong>HTTP POST</strong>  /api/presecurity/feedback</p>
+</div>
+<div class="section" id="id3">
+<h2>请求体格式<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>请求体格式为JSON，字段名不区分大小写:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;DeviceCode&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">闸机设备编号</span>
+    <span class="s2">&quot;Status&quot;</span><span class="p">:</span><span class="s2">&quot;int&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">闸机状态</span><span class="p">,</span><span class="n">附说明</span>
+    <span class="s2">&quot;LastResponseId&quot;</span><span class="p">:</span><span class="s2">&quot;long&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">上次开门请求的响应流水号</span>
+    <span class="s2">&quot;FacePhoto&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="o">//</span><span class="n">拍摄人脸照片Base64编码</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="status">
+<h3>Status闸机状态说明<a class="headerlink" href="#status" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Status</th>
+<th class="head">说明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>第一道门有尾随，尾随成功</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>第一道门有尾随，未通过</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>人员离开第一道门感应区</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>第一道门正常通过且关门</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>第一道门无旅客进入，超时关闭</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>第二道门旅客未通过，超时关闭</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>第二道门正常通过且关门</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>第二道门反向闯入感应区，门自动关闭</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>人员离开第二道门感应区</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>请求体示例<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;DeviceCode&quot;</span><span class="p">:</span><span class="s2">&quot;Z001&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Status&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+    <span class="s2">&quot;LastResponseId&quot;</span><span class="p">:</span><span class="mi">7976321</span><span class="p">,</span>
+    <span class="s2">&quot;FacePhoto&quot;</span><span class="p">:</span><span class="s2">&quot;LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>响应体格式<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;Success&quot;</span><span class="p">:</span><span class="s2">&quot;bool&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">操作成功标志</span>
+    <span class="s2">&quot;Message&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="o">//</span><span class="n">操作说明</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>响应体示例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;Success&quot;</span><span class="p">:</span><span class="n">true</span><span class="p">,</span>
+    <span class="s2">&quot;Message&quot;</span><span class="p">:</span><span class="s2">&quot;操作成功&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, QDCARES
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
