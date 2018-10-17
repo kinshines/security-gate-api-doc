@@ -72,4 +72,4 @@
         "BoardPassNo":"M1SURNAME/FIRSTNM ABCDEF TAOAAANH 9999O181C99999999 35D>5184 7181B1A 09999999999992A 0 NH XB FQTVNUMBER25FQTV Y*30699999K09 XBAASSR"
     }
 
-.. include:: ../security_response.rst
+.. include:: ../hello.rst
