@@ -80,23 +80,3 @@ StatusCode状态码说明
 +------------+--------------------------+
 | 441        | 参数错误                 |
 +------------+--------------------------+
-
-响应体示例
---------------
-::
-
-    {
-        "ResponseId":7976321,
-        "GateAction":0,
-        "StatusCode":413,
-        "Description":"航班已起飞，禁止通行",
-        "Type":"NI",
-        "Id":"110101197608056896",
-        "Name":"张三",
-        "FlightDate":"2018-10-10",
-        "FlightNo":"CA1234",
-        "Departure":"TAO",
-        "Seat":"SN37A",
-        "BoardNo":"BN123",
-        "FlightStatus":"DEP"
-    }
