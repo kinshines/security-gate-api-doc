@@ -49,3 +49,25 @@
         "Gender":"M",
         "Photo":"ABSSDDADFDSFDSH42153544FDJAFOIJOIA123……"
     }
+
+扫描登机牌信息请求URL
+---------------------------
+**HTTP POST**  /api/presecurity/boardpass
+
+扫描登机牌信息请求体格式
+-------------------------------
+请求体格式为JSON，字段名不区分大小写::
+
+    {
+        "DeviceCode":"string",//设备编号
+        "BoardPassNo":"string"//登机牌号码
+    }
+
+扫描登机牌信息请求体示例
+------------------------------
+::
+
+    {
+        "DeviceCode":"Z001",
+        "BoardPassNo":"M1SURNAME/FIRSTNM ABCDEF TAOAAANH 9999O181C99999999 35D>5184 7181B1A 09999999999992A 0 NH XB FQTVNUMBER25FQTV Y*30699999K09 XBAASSR"
+    }
