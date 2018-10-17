@@ -10,4 +10,3 @@ Welcome to security-gate-api's documentation!
    :maxdepth: 2
    
    hello
-   pre_security
