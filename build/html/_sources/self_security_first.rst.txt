@@ -50,4 +50,4 @@
         "Photo":"ABSSDDADFDSFDSH42153544FDJAFOIJOIA123……"
     }
 
-.. include:: ../security_response.rst
+.. include:: _include/security_response.rst

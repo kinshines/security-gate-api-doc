@@ -77,8 +77,11 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hello.html">恒大城发吃饭的</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pre_security.html">预安检闸机开门请求</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pre_security_feedback.html">预安检开门结果反馈</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../self_security_first.html">自助安检第一道门开门请求</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../self_security_second.html">自助安检第二道门开门请求</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../self_security_feedback.html">自助安检开门结果反馈</a></li>
 </ul>
 
             
@@ -194,8 +197,8 @@
 <h2>StatusCode状态码说明<a class="headerlink" href="#statuscode" title="永久链接至标题">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
-<col width="23%" />
-<col width="77%" />
+<col width="21%" />
+<col width="79%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">StatusCode</th>
@@ -264,7 +267,7 @@
 <td>人脸比对失败</td>
 </tr>
 <tr class="row-even"><td>431</td>
-<td>人脸比对失败超过上限</td>
+<td>人脸比对失败次数超过上限</td>
 </tr>
 <tr class="row-odd"><td>440</td>
 <td>目的站未识别</td>
@@ -274,10 +277,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 <div class="section" id="id2">
-<h1>响应体示例<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<h3>响应体示例<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;ResponseId&quot;</span><span class="p">:</span><span class="mi">7976321</span><span class="p">,</span>
     <span class="s2">&quot;GateAction&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
@@ -294,6 +295,8 @@
     <span class="s2">&quot;FlightStatus&quot;</span><span class="p">:</span><span class="s2">&quot;DEP&quot;</span>
 <span class="p">}</span>
 </pre></div>
+</div>
+</div>
 </div>
 </div>
 
