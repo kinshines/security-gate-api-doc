@@ -1,4 +1,3 @@
-=========================
 自助安检开门结果反馈
 =========================
 
@@ -48,5 +47,3 @@ Status                    说明
         "Status":4,
         "LastResponseId":7976321
     }
-
-.. include:: /_include/security_feedback_response.rst

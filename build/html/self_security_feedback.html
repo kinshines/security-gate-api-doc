@@ -27,7 +27,8 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="genindex.html" />
-    <link rel="search" title="搜索" href="search.html" /> 
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="自助安检第二道门开门请求" href="self_security_second.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -76,9 +77,21 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="hello.html">恒大城发吃饭的</a></li>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="pre_security.html">预安检闸机开门请求</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pre_security_feedback.html">预安检开门结果反馈</a></li>
+<li class="toctree-l1"><a class="reference internal" href="self_security_first.html">自助安检第一道门开门请求</a></li>
+<li class="toctree-l1"><a class="reference internal" href="self_security_second.html">自助安检第二道门开门请求</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">自助安检开门结果反馈</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">场景描述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#url">请求URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">请求体格式</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#status">Status闸机状态说明</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">请求体示例</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -218,24 +231,6 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>响应体格式<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="s2">&quot;Success&quot;</span><span class="p">:</span><span class="s2">&quot;bool&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">操作成功标志</span>
-    <span class="s2">&quot;Message&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="o">//</span><span class="n">操作说明</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="id6">
-<h2>响应体示例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="s2">&quot;Success&quot;</span><span class="p">:</span><span class="n">true</span><span class="p">,</span>
-    <span class="s2">&quot;Message&quot;</span><span class="p">:</span><span class="s2">&quot;操作成功&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
 </div>
 
 
@@ -243,6 +238,13 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="self_security_second.html" class="btn btn-neutral" title="自助安检第二道门开门请求" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

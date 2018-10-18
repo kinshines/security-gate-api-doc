@@ -1,5 +1,6 @@
+========================
 预安检开门结果反馈
-==================
+========================
 
 场景描述
 ----------
@@ -48,3 +49,5 @@ Status                    说明
         "LastResponseId":7976321,
         "FacePhoto":"LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……"
     }
+
+.. include:: ../security_feedback_response.rst

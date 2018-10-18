@@ -9,4 +9,8 @@ Welcome to security-gate-api's documentation!
 .. toctree::
    :maxdepth: 2
    
-   hello
+   pre_security
+   pre_security_feedback
+   self_security_first
+   self_security_second
+   self_security_feedback
