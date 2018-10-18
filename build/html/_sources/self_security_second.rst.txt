@@ -34,3 +34,5 @@
         "FaceConstractPhoto":"ABSSDDADFDSFDSH42153544FDJAFOIJOIA123……",
         "LastResponseId":7809242345
     }
+
+.. include:: ../security_response.rst
