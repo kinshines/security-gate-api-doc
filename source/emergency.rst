@@ -23,9 +23,10 @@
 请求体示例
 ----------------------------
 ::
+
     {
         "DeviceCode":"Z001",
-        "Emergency":1,
+        "Emergency","1"
     }
 
 .. include:: _include/security_feedback_response.rst
