@@ -25,3 +25,4 @@
    self_security_first
    self_security_second
    self_security_feedback
+   emergency
