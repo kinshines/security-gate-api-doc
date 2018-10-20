@@ -83,6 +83,8 @@
 <li class="toctree-l1"><a class="reference internal" href="self_security_first.html">自助安检第一道门开门请求</a></li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_second.html">自助安检第二道门开门请求</a></li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_feedback.html">自助安检开门结果反馈</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emergency.html">紧急状态推送</a></li>
+<li class="toctree-l1"><a class="reference internal" href="turnstile_status.html">闸机当前状态推送</a></li>
 </ul>
 
             
@@ -152,9 +154,9 @@
 <div class="section" id="id2">
 <h2>概述<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>在预安检和自助安检的业务场景中，旅客持有效证件或登机牌，经闸机扫描后，
-闸机服务提取旅客证件信息或登机牌信息，发送至安检信息系统，由安检信息系统判定旅客可否通行
-并返回指令给闸机服务，闸机服务据此展示给旅客相关信息并做出相应动作后反馈至安检信息系统</p>
-<p>Web服务接口由Web API提供，支持客户端基于HTTP协议请求调用，推荐JSON作为数据传输格式</p>
+闸机服务提取旅客证件信息或登机牌信息，发送至安检信息系统，由安检信息系统判定旅客可否通行，
+返回指令给闸机服务，闸机服务据此展示给旅客相关信息并做出相应动作后反馈至安检信息系统</p>
+<p>此Web服务接口由安检信息系统通过Web API提供，支持客户端基于HTTP协议请求调用，推荐JSON作为数据传输格式</p>
 </div>
 <div class="section" id="id3">
 <h2>目录<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
@@ -168,6 +170,7 @@
 <li class="toctree-l2"><a class="reference internal" href="pre_security.html#id5">扫描登机牌信息请求URL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pre_security.html#id6">扫描登机牌信息请求体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pre_security.html#id7">扫描登机牌信息请求体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pre_security.html#id8">响应体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pre_security.html#id9">响应体示例</a></li>
 </ul>
 </li>
@@ -176,7 +179,8 @@
 <li class="toctree-l2"><a class="reference internal" href="pre_security_feedback.html#url">请求URL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pre_security_feedback.html#id3">请求体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pre_security_feedback.html#id4">请求体示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pre_security_feedback.html#id5">响应体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pre_security_feedback.html#id5">响应体格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pre_security_feedback.html#id6">响应体示例</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_first.html">自助安检第一道门开门请求</a><ul>
@@ -184,6 +188,7 @@
 <li class="toctree-l2"><a class="reference internal" href="self_security_first.html#url">请求URL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_first.html#id3">请求体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_first.html#id4">请求体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="self_security_first.html#id5">响应体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_first.html#id6">响应体示例</a></li>
 </ul>
 </li>
@@ -192,6 +197,7 @@
 <li class="toctree-l2"><a class="reference internal" href="self_security_second.html#url">请求URL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_second.html#id3">请求体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_second.html#id4">请求体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="self_security_second.html#id5">响应体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_second.html#id6">响应体示例</a></li>
 </ul>
 </li>
@@ -200,7 +206,26 @@
 <li class="toctree-l2"><a class="reference internal" href="self_security_feedback.html#url">请求URL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_feedback.html#id3">请求体格式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="self_security_feedback.html#id4">请求体示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="self_security_feedback.html#id5">响应体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="self_security_feedback.html#id5">响应体格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="self_security_feedback.html#id6">响应体示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="emergency.html">紧急状态推送</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="emergency.html#id2">场景描述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emergency.html#url">请求URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emergency.html#id3">请求体格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emergency.html#id4">请求体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emergency.html#id5">响应体格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="emergency.html#id6">响应体示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="turnstile_status.html">闸机当前状态推送</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="turnstile_status.html#id2">场景描述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turnstile_status.html#url">请求URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turnstile_status.html#id3">请求体格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turnstile_status.html#id6">请求体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turnstile_status.html#id7">响应体格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turnstile_status.html#id8">响应体示例</a></li>
 </ul>
 </li>
 </ul>

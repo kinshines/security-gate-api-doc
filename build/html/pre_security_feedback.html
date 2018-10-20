@@ -88,12 +88,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">请求体示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">响应体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">响应体格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">响应体示例</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_first.html">自助安检第一道门开门请求</a></li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_second.html">自助安检第二道门开门请求</a></li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_feedback.html">自助安检开门结果反馈</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emergency.html">紧急状态推送</a></li>
+<li class="toctree-l1"><a class="reference internal" href="turnstile_status.html">闸机当前状态推送</a></li>
 </ul>
 
             
@@ -233,6 +236,9 @@
 <span class="p">}</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="id5">
+<h2>响应体格式<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;Success&quot;</span><span class="p">:</span><span class="s2">&quot;bool&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">操作成功标志</span>
     <span class="s2">&quot;Message&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="o">//</span><span class="n">操作说明</span>
@@ -240,8 +246,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>响应体示例<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id6">
+<h2>响应体示例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;Success&quot;</span><span class="p">:</span><span class="n">true</span><span class="p">,</span>
     <span class="s2">&quot;Message&quot;</span><span class="p">:</span><span class="s2">&quot;操作成功&quot;</span>

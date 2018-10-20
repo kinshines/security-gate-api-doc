@@ -86,12 +86,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#id4">扫描证件信息请求体示例</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id5">扫描登机牌信息请求URL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id6">扫描登机牌信息请求体格式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">扫描登机牌信息请求体示例</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id8">响应体格式</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#gateaction">GateAction闸机动作说明</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#statuscode">StatusCode状态码说明</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">扫描登机牌信息请求体示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">响应体格式</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gateaction">GateAction闸机动作说明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#statuscode">StatusCode状态码说明</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id9">响应体示例</a></li>
@@ -101,6 +99,8 @@
 <li class="toctree-l1"><a class="reference internal" href="self_security_first.html">自助安检第一道门开门请求</a></li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_second.html">自助安检第二道门开门请求</a></li>
 <li class="toctree-l1"><a class="reference internal" href="self_security_feedback.html">自助安检开门结果反馈</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emergency.html">紧急状态推送</a></li>
+<li class="toctree-l1"><a class="reference internal" href="turnstile_status.html">闸机当前状态推送</a></li>
 </ul>
 
             
@@ -238,8 +238,9 @@
 <span class="p">}</span>
 </pre></div>
 </div>
+</div>
 <div class="section" id="id8">
-<h3>响应体格式<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<h2>响应体格式<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;ResponseId&quot;</span><span class="p">:</span><span class="s2">&quot;long&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">响应流水号</span><span class="p">,</span><span class="n">用于闸机动作后反馈状态时提供</span>
     <span class="s2">&quot;GateAction&quot;</span><span class="p">:</span><span class="s2">&quot;int&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">闸机动作</span><span class="p">,</span><span class="n">附说明</span>
@@ -251,14 +252,15 @@
     <span class="s2">&quot;FlightDate&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">航班日期</span>
     <span class="s2">&quot;FlightNo&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">航班号</span>
     <span class="s2">&quot;Departure&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">始发站</span>
-    <span class="s2">&quot;Seat&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">座位号</span>
+    <span class="s2">&quot;Destination&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">目的站</span>
+    <span class="s2">&quot;SeatNo&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">座位号</span>
     <span class="s2">&quot;BoardNo&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="o">//</span><span class="n">登机号</span>
     <span class="s2">&quot;FlightStatus&quot;</span><span class="p">:</span><span class="s2">&quot;string&quot;</span><span class="o">//</span><span class="n">航班状态</span><span class="p">,</span><span class="n">ONR</span><span class="p">:</span><span class="n">前站起飞</span><span class="p">;</span><span class="n">ARR</span><span class="p">:</span><span class="n">本站到达</span><span class="p">;</span><span class="n">CKI</span><span class="p">:</span><span class="n">值机开始</span><span class="p">;</span><span class="n">CKO</span><span class="p">:</span><span class="n">值机截止</span><span class="p">;</span><span class="n">BOR</span><span class="p">:</span><span class="n">登机开始</span><span class="p">;</span><span class="n">TBR</span><span class="p">:</span><span class="n">过站登机</span><span class="p">;</span><span class="n">LBD</span><span class="p">:</span><span class="n">催促登机</span><span class="p">;</span><span class="n">POK</span><span class="p">:</span><span class="n">登机截止</span><span class="p">;</span><span class="n">DEP</span><span class="p">:</span><span class="n">起飞</span><span class="p">;</span><span class="n">DLY</span><span class="p">:</span><span class="n">延误</span><span class="p">;</span><span class="n">CAN</span><span class="p">:</span><span class="n">取消</span><span class="p">;</span><span class="n">RTN</span><span class="p">:</span><span class="n">返航</span><span class="p">;</span><span class="n">ALT</span><span class="p">:</span><span class="n">备降</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="gateaction">
-<h4>GateAction闸机动作说明<a class="headerlink" href="#gateaction" title="永久链接至标题">¶</a></h4>
+<h3>GateAction闸机动作说明<a class="headerlink" href="#gateaction" title="永久链接至标题">¶</a></h3>
 <table border="1" class="docutils">
 <colgroup>
 <col width="26%" />
@@ -286,7 +288,7 @@
 </table>
 </div>
 <div class="section" id="statuscode">
-<h4>StatusCode状态码说明<a class="headerlink" href="#statuscode" title="永久链接至标题">¶</a></h4>
+<h3>StatusCode状态码说明<a class="headerlink" href="#statuscode" title="永久链接至标题">¶</a></h3>
 <table border="1" class="docutils">
 <colgroup>
 <col width="21%" />
@@ -371,7 +373,6 @@
 </table>
 </div>
 </div>
-</div>
 <div class="section" id="id9">
 <h2>响应体示例<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -385,7 +386,8 @@
     <span class="s2">&quot;FlightDate&quot;</span><span class="p">:</span><span class="s2">&quot;2018-10-10&quot;</span><span class="p">,</span>
     <span class="s2">&quot;FlightNo&quot;</span><span class="p">:</span><span class="s2">&quot;CA1234&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Departure&quot;</span><span class="p">:</span><span class="s2">&quot;TAO&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Seat&quot;</span><span class="p">:</span><span class="s2">&quot;SN37A&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Destination&quot;</span><span class="p">:</span><span class="s2">&quot;CAN&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;SeatNo&quot;</span><span class="p">:</span><span class="s2">&quot;SN37A&quot;</span><span class="p">,</span>
     <span class="s2">&quot;BoardNo&quot;</span><span class="p">:</span><span class="s2">&quot;BN123&quot;</span><span class="p">,</span>
     <span class="s2">&quot;FlightStatus&quot;</span><span class="p">:</span><span class="s2">&quot;DEP&quot;</span>
 <span class="p">}</span>
