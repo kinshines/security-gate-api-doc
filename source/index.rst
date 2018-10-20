@@ -26,3 +26,4 @@
    self_security_second
    self_security_feedback
    emergency
+   turnstile_status
