@@ -27,3 +27,4 @@
    self_security_feedback
    emergency
    turnstile_status
+   set_powermode
