@@ -1,14 +1,14 @@
 ====================
-控制闸机开检和闭检
+控制闸机门工作模式
 ====================
 
 场景描述
 ----------
-通过此接口控制闸机开检和闭检
+通过此接口控制闸机门的工作模式，工作模式有 **正常**、**常开**、**常闭** 三种
 
 请求URL
 ---------------------
-**HTTP POST**  /api/gate/powermode
+**HTTP POST**  /api/gate/workmode
 
 请求体格式
 ----------------------------
@@ -17,7 +17,8 @@
     {
         "Id":"long", //闸机设备ID,若值不为0,根据此字段查询设备,若为0或为提供,则根据DeviceCode查询设备
         "DeviceCode":"string", //闸机设备编号
-        "PowerMode":"int" //模式, 1:开检;2:闭检
+        "FirstMode":"int", //一门工作模式, 0:正常;1:常开;2:常闭
+        "SecondMode":"int" //二门工作模式, 0:正常;1:常开;2:常闭
     }
 
 请求体示例
@@ -27,7 +28,8 @@
     {
         "Id":1
         "DeviceCode":"Z001",
-        "PowerMode":1
+        "FirstMode":1,
+        "SecondMode":0
     }
 
 .. include:: _include/gate_status_response.rst
