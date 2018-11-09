@@ -1,5 +1,5 @@
 ====================
-查询闸机状态
+查询单台闸机实时状态
 ====================
 
 场景描述
@@ -9,6 +9,11 @@
 请求URL
 ---------------------
 **HTTP GET**  /api/gate/querystatus?devicecode={devicecode}
+
 参数 **{devicecode}** 指定闸机编号
+
+请求URL示例
+----------------------------
+**HTTP GET**  /api/gate/querystatus?devicecode=Z001
 
 .. include:: _include/gate_status_response.rst
