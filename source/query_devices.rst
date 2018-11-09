@@ -8,9 +8,9 @@
 
 请求URL
 ---------------------
-**HTTP GET**  /api/gate/getalldevices?filter={filter}
+**HTTP GET**  /api/gate/getalldevices?devicecode={devicecode}
 
-参数 **{filter}** 可 **模糊** 查询闸机编号
+参数 **{devicecode}** 可**模糊**查询闸机编号
 
 请求URL示例
 ----------------------------
