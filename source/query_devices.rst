@@ -10,11 +10,11 @@
 ---------------------
 **HTTP GET**  /api/gate/getalldevices?devicecode={devicecode}
 
-参数 **{devicecode}** 可**模糊**查询闸机编号
+参数 **{devicecode}** 可 **模糊** 查询闸机编号
 
 请求URL示例
 ----------------------------
-**HTTP GET**  /api/gate/getalldevices?filter=Z
+**HTTP GET**  /api/gate/getalldevices?devicecode=Z
 
 响应体格式
 -------------
