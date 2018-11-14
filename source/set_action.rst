@@ -21,12 +21,12 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "Id":"long", //闸机设备ID,若值不为0,根据此字段查询设备,若为0或为提供,则根据DeviceCode查询设备
-        "DeviceCode":"string", //闸机设备编号
-        "FirstDirection":"int", //一门开门方向,指定一门打开时需设置此项, 0:反向;1:正向
-        "FirstStatus":"int", //一门动作, 0:关闭;1:打开
-        "SecondDirection":"int", //二门开门方向, 指定二门打开时需设置此项, 0:反向;1:正向
-        "SecondStatus":"int" //二门动作, 0:关闭;1:打开
+        "id":"long", //闸机设备ID,若值不为0,根据此字段查询设备,若为0或为提供,则根据DeviceCode查询设备
+        "deviceCode":"string", //闸机设备编号
+        "firstDirection":"int", //一门开门方向,指定一门打开时需设置此项, 0:反向;1:正向
+        "firstStatus":"int", //一门动作, 0:关闭;1:打开
+        "secondDirection":"int", //二门开门方向, 指定二门打开时需设置此项, 0:反向;1:正向
+        "secondStatus":"int" //二门动作, 0:关闭;1:打开
     }
 
 请求体示例
@@ -34,12 +34,12 @@
 ::
 
     {
-        "Id":1
-        "DeviceCode":"Z001",
-        "FirstDirection":1,
-        "FirstStatus":1,
-        "SecondDirection":0
-        "SecondStatus":1
+        "id":1
+        "deviceCode":"Z001",
+        "firstDirection":1,
+        "firstStatus":1,
+        "secondDirection":0
+        "secondStatus":1
     }
 
 .. include:: _include/gate_status_response.rst

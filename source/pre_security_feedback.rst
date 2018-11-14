@@ -15,17 +15,17 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "DeviceCode":"string",//闸机设备编号
-        "Status":"int",//闸机状态,附说明
-        "LastResponseId":"long",//上次开门请求的响应流水号
-        "FacePhoto":"string"//拍摄人脸照片Base64编码
+        "deviceCode":"string",//闸机设备编号
+        "status":"int",//闸机状态,附说明
+        "lastResponseId":"long",//上次开门请求的响应流水号
+        "facePhoto":"string"//拍摄人脸照片Base64编码
     }
 
-Status闸机状态说明
+status闸机状态说明
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ==========    ==============================
-Status                    说明
+status                    说明
 ==========    ==============================
 1                            第一道门有尾随，尾随成功
 2                            第一道门有尾随，未通过
@@ -44,10 +44,10 @@ Status                    说明
 ::
 
     {
-        "DeviceCode":"Z001",
-        "Status":4,
-        "LastResponseId":7976321,
-        "FacePhoto":"LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……"
+        "deviceCode":"Z001",
+        "status":4,
+        "lastResponseId":7976321,
+        "facePhoto":"LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……"
     }
 
 .. include:: _include/security_feedback_response.rst

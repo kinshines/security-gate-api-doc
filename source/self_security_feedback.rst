@@ -16,12 +16,12 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "DeviceCode":"string",//闸机设备编号
-        "Status":"int",//闸机状态,附说明
-        "LastResponseId":"long"//上次开门请求的响应流水号
+        "deviceCode":"string",//闸机设备编号
+        "status":"int",//闸机状态,附说明
+        "lastResponseId":"long"//上次开门请求的响应流水号
     }
 
-Status闸机状态说明
+status闸机状态说明
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 ==========    ==============================
@@ -44,9 +44,9 @@ Status                    说明
 ::
 
     {
-        "DeviceCode":"Z001",
-        "Status":4,
-        "LastResponseId":7976321
+        "deviceCode":"Z001",
+        "status":4,
+        "lastResponseId":7976321
     }
 
 .. include:: _include/security_feedback_response.rst

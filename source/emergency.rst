@@ -16,8 +16,8 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "DeviceCode":"string",//设备编号
-        "Emergency","int"//紧急状态,0:正常;1:紧急
+        "deviceCode":"string",//设备编号
+        "emergency","int"//紧急状态,0:正常;1:紧急
     }
 
 请求体示例
@@ -25,8 +25,8 @@
 ::
 
     {
-        "DeviceCode":"Z001",
-        "Emergency",1
+        "deviceCode":"Z001",
+        "emergency",1
     }
 
 .. include:: _include/security_feedback_response.rst

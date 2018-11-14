@@ -16,11 +16,11 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "DeviceCode":"string",//设备编号
-        "Similarity":"double",//人脸识别相似度
-        "FacePhoto":"string",//拍摄人脸照片(含背景)Base64编码
-        "FaceConstractPhoto":"string",//人脸识别图像(仅人脸)Base64编码
-        "LastResponseId":"long"//第一道门请求响应的流水号
+        "deviceCode":"string",//设备编号
+        "similarity":"double",//人脸识别相似度
+        "facePhoto":"string",//拍摄人脸照片(含背景)Base64编码
+        "faceConstractPhoto":"string",//人脸识别图像(仅人脸)Base64编码
+        "lastResponseId":"long"//第一道门请求响应的流水号
     }
 
 请求体示例
@@ -28,11 +28,11 @@
 ::
 
     {
-        "DeviceCode":"Z001",
-        "Similarity":0.98,
-        "FacePhoto":"LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……",
-        "FaceConstractPhoto":"ABSSDDADFDSFDSH42153544FDJAFOIJOIA123……",
-        "LastResponseId":7809242345
+        "deviceCode":"Z001",
+        "similarity":0.98,
+        "facePhoto":"LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……",
+        "faceConstractPhoto":"ABSSDDADFDSFDSH42153544FDJAFOIJOIA123……",
+        "lastResponseId":7809242345
     }
 
 .. include:: _include/security_response.rst

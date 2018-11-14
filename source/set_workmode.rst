@@ -15,10 +15,10 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "Id":"long", //闸机设备ID,若值不为0,根据此字段查询设备,若为0或为提供,则根据DeviceCode查询设备
-        "DeviceCode":"string", //闸机设备编号
-        "FirstMode":"int", //一门工作模式, 0:正常;1:常开;2:常闭
-        "SecondMode":"int" //二门工作模式, 0:正常;1:常开;2:常闭
+        "id":"long", //闸机设备ID,若值不为0,则根据此字段查询设备,若为0或为提供,则根据DeviceCode查询设备
+        "deviceCode":"string", //闸机设备编号
+        "firstMode":"int", //一门工作模式, 0:正常;1:常开;2:常闭
+        "secondMode":"int" //二门工作模式, 0:正常;1:常开;2:常闭
     }
 
 请求体示例
@@ -26,10 +26,10 @@
 ::
 
     {
-        "Id":1
-        "DeviceCode":"Z001",
-        "FirstMode":1,
-        "SecondMode":0
+        "id":1
+        "deviceCode":"Z001",
+        "firstMode":1,
+        "secondMode":0
     }
 
 .. include:: _include/gate_status_response.rst
