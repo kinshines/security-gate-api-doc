@@ -9,7 +9,7 @@
 
 请求URL
 -------------------------
-**HTTP POST**  /api/gate/setemergency
+**HTTP POST**  /api/gate/pushemergency
 
 请求体格式
 ----------------------------

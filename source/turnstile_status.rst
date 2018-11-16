@@ -8,7 +8,7 @@
 
 请求URL
 -------------------------
-**HTTP POST**  /api/gate/setstatus
+**HTTP POST**  /api/gate/pushstatus
 
 请求体格式
 ----------------------------
