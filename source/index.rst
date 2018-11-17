@@ -28,8 +28,8 @@
    self_security_first
    self_security_second
    self_security_feedback
-   emergency
-   turnstile_status
+   push_emergency
+   push_turnstile_status
    set_powermode
    set_workmode
    set_alert
