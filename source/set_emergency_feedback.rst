@@ -12,7 +12,7 @@
 
 请求URL
 ---------------------
-**HTTP POST**  /api/gatefeedback/emegency
+**HTTP POST**  /api/gatefeedback/emergency
 
 请求体格式
 ----------------------------
