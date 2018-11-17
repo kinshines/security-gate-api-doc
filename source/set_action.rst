@@ -42,4 +42,4 @@
         "secondStatus":1
     }
 
-.. include:: _include/gate_status_response.rst
+.. include:: _include/gate_command_response.rst

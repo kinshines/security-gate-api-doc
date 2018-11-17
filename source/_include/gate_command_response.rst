@@ -3,7 +3,7 @@
 ::
 
     {
-        "success":"bool", //操作是否成功
+        "success":"bool", //闸机接收指令是否成功
         "message":"string", //附加说明
     }
 
@@ -13,6 +13,6 @@
 
     {
         "success":true
-        "message":"操作成功"
+        "message":"指令接收成功"
     }
 
