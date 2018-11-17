@@ -7,6 +7,10 @@
 通过此接口控制闸机门的打开和关闭，
 注意此接口仅发送指令，闸机通过 `闸机打开反馈接口 <set_action_open_feedback.html>`_ 或 `闸机关闭反馈接口 <set_action_close_feedback.html>`_ 异步返回闸机的动作状态。
 
+面向客户端
+::::::::::::::::::::
+安检管理后台和移动管理平台
+
 请求URL
 ---------------------
 **HTTP POST**  /api/gate/action?number={number}
