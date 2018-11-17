@@ -14,7 +14,7 @@
 
 请求URL示例
 ----------------------------
-**HTTP GET**  /api/gate/action?number=1
+**HTTP POST**  /api/gate/action?number=1
 
 请求体格式
 ----------------------------

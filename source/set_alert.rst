@@ -14,7 +14,7 @@
 
 请求URL示例
 ----------------------------
-**HTTP GET**  /api/gate/alert?sec=20
+**HTTP POST**  /api/gate/alert?sec=20
 
 请求体格式
 ----------------------------
