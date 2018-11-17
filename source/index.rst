@@ -32,8 +32,13 @@
    push_turnstile_status
    set_powermode
    set_workmode
+   set_emergency
+   set_emergency_feedback
    set_alert
+   set_alert_feedback
    set_action
+   set_action_open_feedback
+   set_action_close_feedback
    query_status
    query_status_feedback
    query_devices
