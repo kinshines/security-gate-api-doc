@@ -35,4 +35,5 @@
    set_alert
    set_action
    query_status
+   query_status_feedback
    query_devices
