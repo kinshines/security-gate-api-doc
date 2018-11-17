@@ -1,14 +1,14 @@
 ============================
-控制闸机门关闭动作异步反馈
+控制闸机开闭检状态异步反馈
 ============================
 
 场景描述
 ----------
-发送 `控制闸机门关闭的指令 <set_action.html>`_ 后，通过此接口异步反馈闸机的动作状态，
+发送 `控制闸机开闭检状态的指令 <set_powermode.html>`_ 后，通过此接口异步反馈闸机的开闭检状态。
 
 请求URL
 ---------------------
-**HTTP POST**  /api/gatefeedback/close
+**HTTP POST**  /api/gatefeedback/powermode
 
 请求体格式
 ----------------------------
@@ -16,7 +16,7 @@
 
     {
         "deviceCode":"string", //闸机设备编号
-        "handleType":"int", //一门或二门, 1:一门;2:二门
+        "status":"int", //报警状态, 0:闭检;1:开检
         "execute":"string" //执行结果说明
     }
 
@@ -26,7 +26,7 @@
 
     {
         "deviceCode":"Z001",
-        "handleType":2,
+        "status":1,
         "execute":"OK"
     }
 

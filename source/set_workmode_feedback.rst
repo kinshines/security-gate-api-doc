@@ -1,14 +1,14 @@
 ============================
-控制闸机门关闭动作异步反馈
+控制闸机报警异步反馈
 ============================
 
 场景描述
 ----------
-发送 `控制闸机门关闭的指令 <set_action.html>`_ 后，通过此接口异步反馈闸机的动作状态，
+发送 `控制闸机工作模式的指令 <set_workmode.html>`_ 后，通过此接口异步反馈闸机的工作模式
 
 请求URL
 ---------------------
-**HTTP POST**  /api/gatefeedback/close
+**HTTP POST**  /api/gatefeedback/workmode
 
 请求体格式
 ----------------------------
@@ -16,7 +16,8 @@
 
     {
         "deviceCode":"string", //闸机设备编号
-        "handleType":"int", //一门或二门, 1:一门;2:二门
+        "firstType":"int", //一门工作模式, 0:正常;1:常开;2:常闭
+        "secondType":"int", //二门工作模式, 0:正常;1:常开;2:常闭
         "execute":"string" //执行结果说明
     }
 
@@ -26,7 +27,8 @@
 
     {
         "deviceCode":"Z001",
-        "handleType":2,
+        "firstType":1,
+        "secondType":2,
         "execute":"OK"
     }
 

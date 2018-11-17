@@ -31,7 +31,9 @@
    push_emergency
    push_turnstile_status
    set_powermode
+   set_powermode_feedback
    set_workmode
+   set_workmode_feedback
    set_emergency
    set_emergency_feedback
    set_alert
