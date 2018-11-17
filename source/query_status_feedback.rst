@@ -4,7 +4,7 @@
 
 场景描述
 ----------
-发送`查询闸机当前的状态的指令 <https://security-gate-api.readthedocs.io/zh_CN/latest/query_status.html>`_ 后，通过此接口异步反馈闸机的当前状态
+发送`查询闸机当前的状态的指令 <query_status.html>`_ 后，通过此接口异步反馈闸机的当前状态
 
 请求URL
 ---------------------
