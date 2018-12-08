@@ -29,7 +29,7 @@
         "authority":"string",//发证机关
         "address":"string",//住址
         "birthday":"string",//出生日期
-        "nation":"string",//民族
+        "nation":"string",//国籍/民族,护照对应国籍;身份证对应民族
         "gender":"string",//性别,M:男;F:女;P:不区分性别
         "photo":"string"//头像Base64编码
     }
