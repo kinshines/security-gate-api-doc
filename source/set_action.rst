@@ -34,7 +34,7 @@
     {
         "id":1
         "deviceCode":"Z001",
-        "number":0
+        "number":1
         "direction":1,
         "status":1
     }
