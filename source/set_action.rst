@@ -23,8 +23,8 @@
         "id":"long", //闸机设备ID,若值不为0,根据此字段查询设备,若为0或未提供,则根据DeviceCode查询设备
         "deviceCode":"string", //闸机设备编号
         "number","int",//闸机栅门,1:一门,2:二门
-        "direction":"int", //开门方向,指定一门打开时需设置此项, 0:反向;1:正向
         "status":"int", //动作, 0:关闭;1:打开
+        "direction":"int", //开门方向,指定开门动作时需设置此项, 0:反向;1:正向
     }
 
 请求体示例
@@ -34,9 +34,9 @@
     {
         "id":1
         "deviceCode":"Z001",
-        "number":1
-        "direction":1,
-        "status":1
+        "number":1,
+        "status":1,
+        "direction":1
     }
 
 .. include:: _include/gate_command_response.rst
