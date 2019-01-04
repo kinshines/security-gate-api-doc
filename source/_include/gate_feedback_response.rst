@@ -3,7 +3,7 @@
 ::
 
     {
-        "success":"bool", //操作是否成功
+        "result":"int", //操作是否成功,1:成功;2:失败
         "message":"string", //附加说明
     }
 
@@ -12,7 +12,7 @@
 ::
 
     {
-        "success":true
+        "result":1
         "message":"操作成功"
     }
 
