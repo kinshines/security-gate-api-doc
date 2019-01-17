@@ -20,7 +20,6 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "id":"long", //闸机设备ID,若值不为0,则根据此字段查询设备,若为0或未提供,则根据DeviceCode查询设备
         "deviceCode":"string", //闸机设备编号
         "emergency":"int" //闸机紧急状态,1:设置紧急状态;0:取消紧急状态
     }
@@ -30,7 +29,6 @@
 ::
 
     {
-        "id":1
         "deviceCode":"Z001",
         "emergency":1
     }
