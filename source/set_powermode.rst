@@ -21,7 +21,7 @@
 
     {
         "deviceCode":"string", //闸机设备编号
-        "powerMode":"int" //模式, 1:开检;2:闭检
+        "powerMode":"int" //模式, 1:开检;0:闭检
     }
 
 请求体示例
