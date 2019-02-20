@@ -32,7 +32,7 @@
     {
         "deviceCode":"Z001",
         "handleType":1,
-        "secondDirection":0,
+        "direction":0,
         "execute":"OK"
     }
 
