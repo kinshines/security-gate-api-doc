@@ -44,7 +44,6 @@
                 "status": "string", //闸机运行状态
                 "reason": "string" //状态原因
             },
-            ...
         ]
     }
 
