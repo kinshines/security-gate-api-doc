@@ -23,13 +23,20 @@
 响应体格式
 -------------
 ::
+
     {
         "dayStat": {
             "total": "int",
             "pass": "int",
             "intercept": "int",
             "lock": "int"
-        }
+        },
+        "hourStat": [
+            {
+                "hour": "int",
+                "pass": "int"
+            }
+        ]
     }
 
 响应体示例
