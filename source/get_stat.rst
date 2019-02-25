@@ -25,15 +25,15 @@
 ::
     {
         "dayStat": {
-            "total":"int", //总数
-            "pass":"int", //通行人数
-            "intercept":"int", //拦截人数
-            "lock":"int" //异常人数
+            "total": "int",
+            "pass": "int",
+            "intercept": "int",
+            "lock": "int"
         },
-        "hourStat":[
+        "hourStat": [
             {
-                "hour":"int", //小时
-                "pass":"int" //通行人数
+                "hour": "int",
+                "pass": "int"
             }
         ]
     }
