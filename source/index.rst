@@ -44,3 +44,5 @@
    query_status
    query_status_feedback
    query_devices
+   get_overall
+   get_stat
