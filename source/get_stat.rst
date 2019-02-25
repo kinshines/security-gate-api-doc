@@ -29,12 +29,12 @@
             "pass":"int", //通行人数
             "intercept":"int", //拦截人数
             "lock":"int" //异常人数
-        }, //当日统计
+        },
         "hourStat":[
             {
                 "hour":"int", //小时
                 "pass":"int" //通行人数
-            }, //当天分小时统计
+            }
         ]
     }
 
