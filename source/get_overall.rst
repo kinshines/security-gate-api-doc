@@ -23,6 +23,7 @@
 响应体格式
 -------------
 ::
+
     {
         "preSecurity": [
             {
@@ -36,12 +37,12 @@
         ],
         "selfSecurity": [
             {
-                "floor": "int",
-                "region": "string",
-                "groupName": "string",
-                "deviceCode": "string",
-                "status": "string",
-                "reason": "string"
+                "floor": "int", //所在楼层
+                "region": "string", //所在安检区域
+                "groupName": "string", //所属分组
+                "deviceCode": "string", //设备编号
+                "status": "string", //闸机运行状态
+                "reason": "string" //状态原因
             },
             ...
         ]
