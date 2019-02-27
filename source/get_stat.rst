@@ -48,7 +48,7 @@
     {
         "gateGroup":"国际安检闸机",
         "deviceCode":"Z001",
-            "dayStat": {
+        "dayStat": {
             "total":"645",
             "pass":"545",
             "intercept":"50",
