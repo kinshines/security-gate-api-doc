@@ -40,6 +40,7 @@ statusCode            说明
 200                        正常通行
 201                        催促登机
 202                        重复安检
+203                        多张机票
 400                        证件失效
 401                        始发站有误
 402                        航班日期有误
@@ -79,6 +80,6 @@ statusCode            说明
         "departure":"TAO",
         "destination":"CAN",
         "seatNo":"SN37A",
-        "boardNo":"BN123",
+        "boardNo":"123",
         "flightStatus":"DEP"
     }
