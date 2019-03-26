@@ -20,7 +20,7 @@
 
     {
         "deviceCode":"string", //闸机设备编号
-        "status":"int", //报警状态, 0:闭检;1:开检
+        "status":"int", //开检状态, 0:闭检;1:开检
         "execute":"string" //执行结果说明
     }
 

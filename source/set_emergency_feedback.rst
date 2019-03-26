@@ -20,7 +20,7 @@
 
     {
         "deviceCode":"string", //闸机设备编号
-        "sbe":"int", //报警状态, 1:紧急;0:正常
+        "sbe":"int", //紧急状态, 1:紧急;0:正常
         "execute":"string" //执行结果说明
     }
 
