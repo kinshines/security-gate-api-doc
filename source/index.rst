@@ -49,3 +49,4 @@
    query_devices
    get_overall
    get_stat
+   query_command
