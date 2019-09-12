@@ -27,6 +27,8 @@
     {
         "gateGroup":"string", //所属分组
         "deviceCode":"string", //设备编号
+        "powerMode":"int", //开闭检状态,1:开检; 0:闭检
+        "emergency":"int", //紧急状态,0:正常; 1:紧急
         "dayStat": {
             "total": "int", //总人数
             "pass": "int", //通行人数
@@ -48,6 +50,8 @@
     {
         "gateGroup":"国际安检闸机",
         "deviceCode":"Z001",
+        "powerMode":1,
+        "emergency":0,
         "dayStat": {
             "total":"645",
             "pass":"545",

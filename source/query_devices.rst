@@ -29,7 +29,7 @@
             "id":"long", //闸机设备ID
             "deviceCode":"string", //闸机设备编号
             "gateType":"int", //闸机类型,1:单门; 2:双门
-            "powerMode":"int", //开闭检状态,1:开检; 2:闭检
+            "powerMode":"int", //开闭检状态,1:开检; 0:闭检
             "emergency":"int", //紧急状态,0:正常; 1:紧急
             "firstMode":"int", //一门工作模式,0:正常; 1:常开; 2:常闭
             "firstDirection":"int", //一门开门方向,0:反向; 1:正向
