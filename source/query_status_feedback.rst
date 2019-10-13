@@ -21,10 +21,11 @@
 
     {
         "deviceCode":"string", //闸机设备编号
-        "firstHandleType":"int", //一门工作模式, 0:正常;1:常开;2:常闭
-        "secondHandleType":"int", //二门工作模式,指, 0:正常;1:常开;2:常闭
-        "firstType":"string", //一门状态, 10:正向开门,11:反向开门,00:关门
-        "secondType":"string", //二门状态, 10:正向开门,11:反向开门,00:关门
+        "powerMode":"int", //0:闭检,1:开检
+        "emergency":"int", //0:正常,1:紧急
+        "firstType":"int", //一门状态, 0:关闭,1:正向开放,2:反向开放
+        "secondType":"int", //二门状态, 0:关闭,1:正向开放,2:反向开放
+        "lockType":"int", // 锁定状态, 0:未锁定,1:人脸识别失败,2:布控
         "execute":"string" //执行结果说明
     }
 
@@ -34,10 +35,11 @@
 
     {
         "deviceCode":"Z001",
-        "firstHandleType":0,
-        "secondHandleType":0,
-        "firstType":"10",
-        "secondType":"11",
+        "powerMode":1,
+        "emergency":0,
+        "firstType":1,
+        "secondType":0,
+        "lockType":1
         "execute":"OK"
     }
 

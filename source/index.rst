@@ -39,6 +39,7 @@
    set_action
    set_action_breakopen_feedback
    set_action_breakclose_feedback
+   set_action_forcepass_feedback
    query_status
    query_status_feedback
    query_devices
