@@ -32,18 +32,11 @@
    self_security_feedback
    self_security_out
    push_emergency
-   push_turnstile_status
    set_powermode
    set_powermode_feedback
-   set_workmode
-   set_workmode_feedback
    set_emergency
    set_emergency_feedback
-   set_alert
-   set_alert_feedback
    set_action
-   set_action_open_feedback
-   set_action_close_feedback
    set_action_breakopen_feedback
    set_action_breakclose_feedback
    query_status
