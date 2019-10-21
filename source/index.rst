@@ -31,7 +31,6 @@
    self_security_second
    self_security_feedback
    self_security_out
-   push_emergency
    set_powermode
    set_powermode_feedback
    set_emergency
