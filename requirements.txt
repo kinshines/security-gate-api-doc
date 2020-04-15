@@ -32,7 +32,7 @@ pylint==2.0.0
 pyparsing==2.2.0
 python-dateutil==2.7.3
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.1
 recommonmark==0.4.0
 requests==2.19.1
 restructuredtext-lint==1.1.3
