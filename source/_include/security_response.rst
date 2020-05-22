@@ -16,9 +16,9 @@
         "destination":"string",//目的站
         "seatNo":"string",//座位号
         "boardNo":"string",//登机号
-        "flightStatus":"string",//航班状态,ONR:前站起飞;ARR:本站到达;CKI:值机开始;CKO:值机截止;BOR:登机开始;TBR:过站登机;LBD:催促登机;POK:登机截止;DEP:起飞;DLY:延误;CAN:取消;RTN:返航;ALT:备降
-        "proceed":"bool",//是否继续,指示闸机是否继续请求,例如一门拦截、人脸比对失败超过上限、抓捕布控人员时,此接口返回false，示意闸机无需继续请求
-        "lockType":"int"//锁定类型,指示闸机锁人后，返回锁定的类型, 0:无锁定; 1:人脸比对失败; 2:布控人员
+        "flightStatus":"string", //航班状态,ONR:前站起飞;ARR:本站到达;CKI:值机开始;CKO:值机截止;BOR:登机开始;TBR:过站登机;LBD:催促登机;POK:登机截止;DEP:起飞;DLY:延误;CAN:取消;RTN:返航;ALT:备降
+        "proceed":"bool", //是否继续,指示闸机是否继续请求, 例如一门拦截, 人脸比对失败超过上限, 抓捕布控人员时, 此接口返回false, 示意闸机无需继续请求
+        "lockType":"int" //锁定类型,指示闸机锁人后, 返回锁定的类型, 0:无锁定; 1:人脸比对失败; 2:布控人员
     }
 
 gateAction闸机动作说明
