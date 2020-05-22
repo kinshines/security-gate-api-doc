@@ -21,7 +21,7 @@
 
     {
         "deviceCode":"string",//设备编号
-        "similarity":"double",//人脸识别相似度
+        "similarity":"double",//人脸识别相似度,对于超时未捕捉到画面的情形,该项传-1,Photo传空字符串
         "facePhoto":"string",//拍摄人脸照片(含背景)Base64编码
         "faceConstractPhoto":"string",//人脸识别图像(仅人脸)Base64编码
         "lastResponseId":"long"//第一道门请求响应的流水号
