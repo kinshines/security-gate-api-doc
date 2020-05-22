@@ -16,6 +16,6 @@
     {
         "version":"2.0.1",
         "versionCode":"705864387542435",
-        "url":"string",
-        "changeLog":"string" 
+        "url":"http://192.168.163.36/release/gatebuild.zip",
+        "changeLog":"闸机控制功能优化" 
     }
