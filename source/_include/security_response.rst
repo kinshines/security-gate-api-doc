@@ -88,5 +88,5 @@ statusCode            说明
         "boardNo":"123",
         "flightStatus":"DEP",
         "proceed":"false",
-        "lockType":2
+        "lockType":0
     }

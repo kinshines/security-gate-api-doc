@@ -45,3 +45,4 @@
    get_overall
    get_stat
    query_command
+   query_upgrade
