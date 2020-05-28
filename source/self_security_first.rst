@@ -20,7 +20,7 @@
 
     {
         "deviceCode":"string",//设备编号
-        "type":"string",//证件类型, NI:身份证;PP:护照;TP:港澳通行证;TW:台湾通行证; I:外国人永久居留身份证;ID:其他
+        "type":"string", //证件类型, NI:身份证; PP:护照; PPOCR:OCR模式识别的护照; TP:港澳通行证; TW:台湾通行证; HM:港澳居民来往内地通行证; TB:台湾居民来往大陆通行证; I:外国人永久居留身份证; ID:其他
         "id":"string",//证件号
         "name":"string",//姓名,身份证姓名,中文姓名
         "engName":"string",//英文名
