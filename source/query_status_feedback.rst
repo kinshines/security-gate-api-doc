@@ -26,7 +26,8 @@
         "firstType":"int", //一门状态, 0:关闭,1:正向开放,2:反向开放
         "secondType":"int", //二门状态, 0:关闭,1:正向开放,2:反向开放
         "lockType":"int", // 锁定状态, 0:未锁定,1:人脸识别失败,2:布控
-        "execute":"string" //执行结果说明
+        "execute":"string", //执行结果说明
+        "pending":"int" //等待状态,0:正常状态,1:等待状态
     }
 
 请求体示例
@@ -39,7 +40,8 @@
         "emergency":0,
         "firstType":1,
         "secondType":0,
-        "lockType":1
+        "lockType":1,
+        
         "execute":"OK"
     }
 

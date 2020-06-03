@@ -45,4 +45,5 @@
    get_overall
    get_stat
    query_command
+   set_pending_feedback
    query_upgrade
