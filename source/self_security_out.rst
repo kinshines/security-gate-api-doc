@@ -15,24 +15,6 @@
 -------------------------
 **HTTP POST**  /api/selfsecurity/out
 
-请求体格式
-----------------------------
-请求体格式为JSON，字段名不区分大小写::
-
-    {
-        "deviceCode":"string",//设备编号
-        "type":"string", //证件类型, NI:身份证; PP:护照; PPOCR:OCR模式识别的护照; TP:港澳通行证; TW:台湾通行证; HM:港澳居民来往内地通行证; TB:台湾居民来往大陆通行证; HMT:港澳台居民居住证; FR:外国人永久居留身份证; ID:其他
-        "id":"string"//证件号
-    }
-
-请求体示例
-----------------------------
-::
-
-    {
-        "deviceCode":"Z001",
-        "type":"NI",
-        "id":"110101197608056896"
-    }
+.. include:: _include/idcard_request.rst
 
 .. include:: _include/security_feedback_response.rst
