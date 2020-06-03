@@ -41,8 +41,8 @@
         "firstType":1,
         "secondType":0,
         "lockType":1,
-        
-        "execute":"OK"
+        "execute":"OK",
+        "pending":0
     }
 
 .. include:: _include/gate_feedback_response.rst
