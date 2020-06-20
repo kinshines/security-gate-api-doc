@@ -19,10 +19,11 @@
 请求体格式为JSON，字段名不区分大小写::
 
     {
-        "deviceCode":"string",//闸机设备编号
-        "status":"int",//闸机状态,附说明
-        "lastResponseId":"long",//上次开门请求的响应流水号
-        "facePhoto":"string"//拍摄人脸照片Base64编码
+        "deviceCode":"string", //闸机设备编号
+        "status":"int", //闸机状态,附说明
+        "lastResponseId":"long",  //上次开门请求的响应流水号
+        "facePhoto":"string",  //拍摄人脸照片(含背景)Base64编码
+        "faceConstractPhoto":"string"//人脸识别图像(仅人脸)Base64编码
     }
 
 status闸机状态说明
