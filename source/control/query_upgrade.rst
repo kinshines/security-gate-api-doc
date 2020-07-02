@@ -22,4 +22,4 @@
 ----------------------------
 **HTTP GET**  /api/config/upgrade?version=1.0.2&devicecode=D05
 
-.. include:: _include/release_response.rst
+.. include:: ../_include/release_response.rst

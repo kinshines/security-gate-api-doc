@@ -14,7 +14,7 @@
 -------------------------
 **HTTP POST**  /api/presecurity/out
 
-.. include:: _include/idcard_request.rst
+.. include:: ../_include/idcard_request.rst
 
 响应体格式
 -------------

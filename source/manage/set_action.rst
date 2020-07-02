@@ -39,4 +39,4 @@
         "direction":1
     }
 
-.. include:: _include/gate_command_response.rst
+.. include:: ../_include/gate_command_response.rst

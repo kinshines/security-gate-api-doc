@@ -1,10 +1,10 @@
 ==================================
-控制闸机门强制放行动作异步反馈
+控制闸机门强制关闭动作异步反馈
 ==================================
 
 场景描述
 ----------
-服务端发送 `控制闸机门强制放行的指令 <set_action.html>`_ 后，闸机通过此接口异步反馈闸机的动作状态。
+服务端发送 `控制闸机门强制关闭的指令 <set_action.html>`_ 后，闸机通过此接口异步反馈闸机的动作状态。
 
 面向客户端
 ::::::::::::::::::::
@@ -12,7 +12,7 @@
 
 请求URL
 ---------------------
-**HTTP POST**  /api/gatefeedback/forcepass
+**HTTP POST**  /api/gatefeedback/breakclose
 
 请求体格式
 ----------------------------
@@ -21,7 +21,6 @@
     {
         "deviceCode":"string", //闸机设备编号
         "handleType":"int", //一门或二门, 1:一门;2:二门
-        "direction":"int", //开门方向, 0:反向;1:正向
         "execute":"string" //执行结果说明
     }
 
@@ -31,9 +30,8 @@
 
     {
         "deviceCode":"Z001",
-        "handleType":1,
-        "direction":0,
+        "handleType":2,
         "execute":"OK"
     }
 
-.. include:: _include/gate_feedback_response.rst
+.. include:: ../_include/gate_feedback_response.rst

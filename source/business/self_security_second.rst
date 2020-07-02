@@ -39,4 +39,4 @@
         "lastResponseId":7809242345
     }
 
-.. include:: _include/security_response.rst
+.. include:: ../_include/security_response.rst

@@ -14,6 +14,6 @@
 -------------------------
 **HTTP POST**  /api/selfsecurity/id
 
-.. include:: _include/idcard_request.rst
+.. include:: ../_include/idcard_request.rst
 
-.. include:: _include/security_response.rst
+.. include:: ../_include/security_response.rst

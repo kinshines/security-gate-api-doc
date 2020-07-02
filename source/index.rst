@@ -22,29 +22,9 @@
 
 .. toctree::
    :maxdepth: 2
-   
-   pre_security
-   pre_security_feedback
-   pre_security_out
-   pre_security_out_feedback
-   self_security_first
-   self_security_second
-   self_security_feedback
-   self_security_out
-   set_powermode
-   set_powermode_feedback
-   set_emergency
-   set_emergency_feedback
-   set_action
-   set_action_breakopen_feedback
-   set_action_breakclose_feedback
-   set_action_forcepass_feedback
-   query_status
-   query_status_feedback
-   query_devices
-   get_overall
-   get_stat
-   query_command
-   set_pending_feedback
-   query_upgrade
-   abnormal_feedback
+   :numbered:
+   :glob:
+
+   business/index
+   control/index
+   manage/index

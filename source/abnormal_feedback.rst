@@ -32,4 +32,4 @@
         "status":1
     }
 
-.. include:: _include/gate_feedback_response.rst
+.. include:: ../_include/gate_feedback_response.rst

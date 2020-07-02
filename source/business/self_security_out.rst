@@ -15,6 +15,6 @@
 -------------------------
 **HTTP POST**  /api/selfsecurity/out
 
-.. include:: _include/idcard_request.rst
+.. include:: ../_include/idcard_request.rst
 
-.. include:: _include/security_feedback_response.rst
+.. include:: ../_include/security_feedback_response.rst
