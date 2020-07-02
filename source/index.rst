@@ -47,3 +47,4 @@
    query_command
    set_pending_feedback
    query_upgrade
+   abnormal_feedback
