@@ -14,4 +14,4 @@
    query_status_feedback
    set_pending_feedback
    query_upgrade
-   abnormal_feedback
+   push_abnormal
