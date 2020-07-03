@@ -13,3 +13,5 @@
    query_devices
    get_overall
    get_stat
+   query_release
+   get_control_status
