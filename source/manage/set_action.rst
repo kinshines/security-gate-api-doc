@@ -5,9 +5,9 @@
 场景描述
 ----------
 通过此接口控制闸机门的打开和关闭，
-注意此接口仅发送指令，闸机通过 `闸机强制打开反馈接口 <set_action_breakopen_feedback.html>`_ 
-或 `闸机强制关闭反馈接口 <set_action_breakclose_feedback.html>`_ 
-或 `闸机强制放行反馈接口 <set_action_forcepass_feedback.html>`_ 异步返回闸机的动作状态。
+注意此接口仅发送指令，闸机通过 `闸机强制打开反馈接口 <../control/set_action_breakopen_feedback.html>`_ 
+或 `闸机强制关闭反馈接口 <../control/set_action_breakclose_feedback.html>`_ 
+或 `闸机强制放行反馈接口 <../control/set_action_forcepass_feedback.html>`_ 异步返回闸机的动作状态。
 
 面向客户端
 ::::::::::::::::::::
