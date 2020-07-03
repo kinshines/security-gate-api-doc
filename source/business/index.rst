@@ -14,3 +14,5 @@
    self_security_second
    self_security_feedback
    self_security_out
+   manual_exit
+   force_pass
