@@ -13,13 +13,32 @@
 
 请求URL
 ---------------------
-**HTTP GET**  /api/config/upgrade?version={version}&devicecode={devicecode}
+**HTTP GET**  /api/config/upgrade?devicecode={devicecode}
 
 参数 **{devicecode}** 指定闸机编号
-参数 **{version}** 指定当前版本号
 
 请求URL示例
 ----------------------------
-**HTTP GET**  /api/config/upgrade?version=1.0.2&devicecode=D05
+**HTTP GET**  /api/config/upgrade?devicecode=D05
 
-.. include:: ../_include/release_response.rst
+响应体格式
+-------------
+::
+
+    {
+        "user":"string", //ftp用户名
+        "password":"string", //ftp登录密码
+        "url":"string", //下载地址
+        "changeLog":"string" //版本更新说明
+    }
+
+响应体示例
+-------------
+::
+
+    {
+        "user":"gateuser",
+        "password":"!WH86tfpk",
+        "url":"ftp://192.168.163.36/release/gatebuild.zip",
+        "changeLog":"闸机控制功能优化" 
+    }
