@@ -39,3 +39,11 @@
     }
 
 .. include:: ../_include/security_response.rst
+
+响应值说明
+::::::::::::::::::::::::::::
+
+gateAction值说明
+ - 在安检闸机第二道门开门请求响应中，有效值为0,1
+ - 当gateAction为0时，闸机不予放行，并在一屏显示拦截原因
+ - 当gateAction为1时，闸机开门放行，旅客进入后，栅门自动关闭

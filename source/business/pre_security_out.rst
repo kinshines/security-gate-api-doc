@@ -75,4 +75,3 @@ statusCode            说明
         "seatNo":"SN37A",
         "boardNo":"123"
     }
-

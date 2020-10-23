@@ -17,7 +17,8 @@
         "seatNo":"string",//座位号
         "boardNo":"string",//登机号
         "flightStatus":"string", //航班状态,ONR:前站起飞;ARR:本站到达;CKI:值机开始;CKO:值机截止;BOR:登机开始;TBR:过站登机;LBD:催促登机;POK:登机截止;DEP:起飞;DLY:延误;CAN:取消;RTN:返航;ALT:备降
-        "lockType":"int" //锁定类型,指示闸机锁人后, 返回锁定的类型, 0:无锁定; 1:人脸比对失败; 2:布控人员
+        "lockType":"int", //锁定类型,指示闸机锁人后, 返回锁定的类型, 0:无锁定; 1:人脸比对失败; 2:布控人员
+        "wait":"int" //等待秒数，用于流量控制时，下一位旅客的等待倒计时，仅在安检一门的请求响应值中有效，且倒计时从接收到响应值时开始计时，在其他的请求响应值中为无效值 0
     }
 
 gateAction闸机动作说明
@@ -30,8 +31,6 @@ gateAction            说明
 1                            开启
 2                            关闭且报警
 3                            一门开启后锁定
-4                            封锁后一门开启
-5                            封锁后二门开启
 6                            二门重试
 11                          反向开门
 ==========    ===========
@@ -76,7 +75,7 @@ statusCode            说明
         "responseId":7976321,
         "gateAction":0,
         "statusCode":413,
-        "description":"航班已起飞，禁止通行",
+        "description":"航班CA1234起飞;Flight Takeoff",
         "type":"NI",
         "id":"110101197608056896",
         "name":"张三",
@@ -84,8 +83,9 @@ statusCode            说明
         "flightNo":"CA1234",
         "departure":"TAO",
         "destination":"CAN",
-        "seatNo":"SN37A",
+        "seatNo":"37A",
         "boardNo":"123",
         "flightStatus":"DEP",
-        "lockType":0
+        "lockType":0,
+        "wait":10
     }
