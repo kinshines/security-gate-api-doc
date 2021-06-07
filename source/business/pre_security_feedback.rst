@@ -49,7 +49,8 @@ status                    说明
         "deviceCode":"Z001",
         "status":4,
         "lastResponseId":7976321,
-        "facePhoto":"LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……"
+        "facePhoto":"LKHKKJGJHGBHKJDSH42153544FDJAFOIJOIA123……",
+        "faceConstractPhoto":"hrwubcasbckdjhasdlhagdlfhasldfh……"
     }
 
 .. include:: ../_include/security_feedback_response.rst
