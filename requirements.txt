@@ -22,7 +22,7 @@ livereload==2.5.2
 MarkupSafe==1.0
 matplotlib==2.2.2
 mccabe==0.6.1
-numpy==1.14.5
+numpy==1.22.0
 packaging==18.0
 pathtools==0.1.2
 pbr==4.3.0
